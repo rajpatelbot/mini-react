@@ -9,4 +9,6 @@
  *
  * @param container
  */
-export function isValidDOMContainer(container: Element | Document): boolean {}
+export function isValidDOMContainer(container: Element | Document): boolean {
+  return container.nodeType === 1;
+}
